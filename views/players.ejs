@@ -1,0 +1,24 @@
+<html ng-app>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
+    </head>
+
+    <body>
+    <% include templates/header.ejs %>
+    <div class="content" id="search-bar">
+        <input type="text" placeholder="ENTER A PLAYER OR TEAM" ng-model="searchPlyr" />
+    </div>
+    <ul class="player-list-names">
+        <% players.forEach(function(player) { %>
+        <li class="player-list-name">
+            <a href='/players/<%=player._id %>'><%=player.first_name %> <%=player.last_name %></a>
+        </li>
+        <% }); %>
+    </ul>
+    </body>
+</html>

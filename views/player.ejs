@@ -1,0 +1,55 @@
+<html ng-app>
+<head>
+    <title>
+
+    </title>
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
+</head>
+
+<body>
+    <% include templates/header.ejs %>
+
+    <div id="player-jumbo" class="jumbotron jumbotron-fluid vertical-center" >
+        <div class="player-info" >
+            <p class="player-number">#<%= player.number%></p>
+            <p class="player-name" ><%= player.first_name%></p>
+            <p class="player-name" ><%= player.last_name%></p>
+        </div>
+        <div class="player-img">
+            <img  src="/images/<%= player._id %>.png">
+        </div>
+        <div class="player-info" >
+
+            <p class="player-name" id="player-pos" ><%= player.pos[0]%></p>
+            <p class="player-name" id="player-team"><%= player.team_name%></p>
+        </div>
+    </div>
+
+    <div class="div-table">
+        <table class="table table-striped" id="player-table">
+            <thead>
+                <tr>
+            <% headers.forEach(function(header){%>
+                <th> <%=header%></th>
+            <% }); %>
+                </tr>
+            </thead>
+            <tbody>
+                    <% player.stats.forEach(function(year){%>
+                    <tr>
+                    <% headers.forEach(function(header){%>
+                     <td> <%= year[header] %> </td>
+                    <% }); %>
+                    </tr>
+                    <% }); %>
+            </tbody>
+
+        </table>
+    </div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>

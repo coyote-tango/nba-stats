@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+}
+
+#menu-bar{
+    background: rgb(29,66,138);
+    color: #fff;
+    padding: 0;
+}
+
+#menu-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#menu-bar li{
+    display: inline;
+    float: left;
+}
+
+#menu-bar  li a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    padding: 17px 18px;
+    text-decoration: none;
+    color: white ;
+    font-weight: 400;
+    font-family: "Roboto Condensed";
+
+}
+
+#menu-bar  span a {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white ;
+    letter-spacing: -1px;
+    float: left;
+    font-weight: 600;
+    font-family: "Roboto Condensed";
+
+}
+
+#menu-bar li a:hover{
+    background-color:  rgb(24,57,118) ;
+}
+#menu-bar span a:hover{
+    background-color:  rgb(24,57,118) ;
+}
+
+#search-bar{
+    background: rgb(243,244,245);
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+#search-bar input{
+    float: left;
+    list-style-type: none;
+    margin: 6px 10px;
+    padding-left: 10px;
+    font-size: medium;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #7c7c7c;
+    font-size: .625rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+main{
+    background: #eee;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 10px;
+
+}
+
+.content #search-bar{
+    padding: 0px;
+}
+
+
+.content input[type="submit"]{
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #777;
+    border: 0;
+    box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+    font-size: 16px;
+}
+
+.content button:nth-child(2){
+    float: right;
+}
+
+.content input{
+    background: #fff;
+    width: 230px;
+    height: 42px;
+    margin-bottom: 0;
+    border: 0;
+    box-shadow: none;
+    transition: 0.3s;
+    padding-right: 25px;
+    border-radius: 3px;
+}
+
+.player-list-names{
+    column-count: 4;
+}
+
+.player-list-name{
+    display: block;
+    padding: 5px 0 5px 5px;
+    line-height: 1.2;
+    border-radius: 3px;
+    list-style: none;
+}
+
+a{
+    color: #2199e8;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+a:hover, a:focus {
+    color: #1585cf;
+    outline: 0;
+}
+
+.player-img{
+    position: static;
+    display: inline-block;
+    text-align: center;
+}
+
+.not-found{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+
+.player-info{
+    display: inline-block;
+    font-family: "Roboto Condensed" ;
+    color: white;
+
+}
+
+#player-jumbo {
+   text-align: center;
+   padding: 0px;
+   background: rgb(29,66,138);
+
+}
+
+.player-name {
+    line-height: 26px;
+    margin: 0;
+    font-weight: bold;
+    padding: 0;
+    font-size: 28px;
+}
+
+.player-number {
+    line-height: 5px;
+    font-size: 40px;}
+
+#player-pos{
+    font-weight: 100;
+
+}
+
+#player-team{
+    text-transform: uppercase;
+}
+
+#player-table{
+    border-bottom: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: .8125rem;
+    margin-bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+th {
+    background: #032f4f;
+    color: #fff;
+    line-height: 1.15em;
+    padding: 14px 6px 10px;
+    vertical-align: bottom;
+    z-index: 20;
+    border-bottom: 0;
+    text-transform: uppercase;
+}
+
+#index-hr {
+    width: 300px;
+    border-top: 2px solid 	rgb(255, 255, 255);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.div-table{
+    padding: 10px 20px;
+}
+#index-jumbo{
+    background: rgb(24,57,110);
+    font-family: "Roboto Condensed";
+}
+
+#teams-jumbo p{
+    font-family: "Roboto Condensed";
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0px;
+
+}
+
+.jumbo-head{
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto Condensed"),
+    local("RobotoCondensed-Regular"),
+    url("https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2")
+    format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
